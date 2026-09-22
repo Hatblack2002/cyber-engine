@@ -1,0 +1,1 @@
+cmd_archival/lib.a := rm -f archival/lib.a; /home/z/android-sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar  rcs archival/lib.a archival/bbunzip.o archival/gzip.o archival/tar.o

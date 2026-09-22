@@ -1,0 +1,24 @@
+# Build artifacts (regenerable from source)
+build-host/
+android/app/build/
+android/app/.cxx/
+android/.gradle/
+*.o
+*.a
+*.so.debug
+
+# IDE / OS metadata
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Gradle cache (machine-specific, regenerable)
+.gradle/
+
+# CMake generated (regenerable)
+CMakeCache.txt
+CMakeFiles/
+
+# Logs
+*.log

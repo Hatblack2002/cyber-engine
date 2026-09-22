@@ -1,0 +1,1 @@
+cmd_coreutils/libcoreutils/built-in.o :=  rm -f coreutils/libcoreutils/built-in.o; /home/z/android-sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar rcs coreutils/libcoreutils/built-in.o

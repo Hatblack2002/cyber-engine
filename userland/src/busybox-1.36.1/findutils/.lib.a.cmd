@@ -1,0 +1,1 @@
+cmd_findutils/lib.a := rm -f findutils/lib.a; /home/z/android-sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar  rcs findutils/lib.a findutils/find.o findutils/grep.o findutils/xargs.o

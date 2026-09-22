@@ -1,0 +1,1 @@
+cmd_console-tools/lib.a := rm -f console-tools/lib.a; /home/z/android-sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar  rcs console-tools/lib.a console-tools/clear.o console-tools/reset.o

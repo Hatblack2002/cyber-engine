@@ -1,0 +1,135 @@
+<!-- Cyber Engine :: PORTRAIT layout
+     Vertical stack per FASE 1 spec. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cyber_bg">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/cyber_panel"
+        android:gravity="center_vertical"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/app_title"
+            android:textColor="@color/cyber_cyan"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/hud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cyber_lime"
+            android:textSize="10sp"
+            android:fontFamily="monospace" />
+    </LinearLayout>
+
+    <!-- NAVIGATION -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/cyber_panel_dark"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/sidebar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical" />
+    </HorizontalScrollView>
+
+    <!-- SYSTEM -->
+    <TextView
+        android:id="@+id/systemText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/cyber_lime"
+        android:textSize="9sp"
+        android:background="@color/cyber_panel_dark" />
+
+    <!-- NETWORK (NOT_IMPLEMENTED badge, ~12dp tall) -->
+    <TextView
+        android:id="@+id/networkText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/cyber_red"
+        android:textSize="9sp"
+        android:background="@color/cyber_panel"
+        android:text="NETWORK.OBSERVATION  NOT_IMPLEMENTED  (spec §0 forbids faking)" />
+
+    <!-- 3D VIEW (large) -->
+    <com.cyberengine.app.CyberSurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35"
+        android:background="@color/cyber_viewport_bg" />
+
+    <!-- CAPABILITIES panel (always visible in portrait, small) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:background="@color/cyber_panel_dark">
+        <TextView
+            android:id="@+id/capabilitiesText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:fontFamily="monospace"
+            android:textColor="@color/cyber_cyan"
+            android:textSize="8sp" />
+    </ScrollView>
+
+    <!-- TERMINAL -->
+    <com.cyberengine.app.TerminalView
+        android:id="@+id/terminalView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:background="@color/cyber_terminal_bg"
+        android:orientation="vertical" />
+
+    <!-- AUTOMATION (NOT_IMPLEMENTED badge) -->
+    <TextView
+        android:id="@+id/automationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/cyber_red"
+        android:textSize="9sp"
+        android:background="@color/cyber_panel"
+        android:text="AUTOMATION  NOT_IMPLEMENTED  (Lua sandbox pending — spec §10)" />
+
+    <!-- BOOT diagnostics (hidden by default, shown when sidebar tap DIAGNÓSTICOS) -->
+    <ScrollView
+        android:id="@+id/bootScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:background="@color/cyber_panel_dark"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/bootText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:fontFamily="monospace"
+            android:textColor="@color/cyber_amber"
+            android:textSize="9sp" />
+    </ScrollView>
+</LinearLayout>

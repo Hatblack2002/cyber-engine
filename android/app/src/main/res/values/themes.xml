@@ -1,0 +1,9 @@
+<resources>
+    <style name="CyberTheme" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/cyber_bg</item>
+        <item name="android:colorBackground">@color/cyber_bg</item>
+        <item name="android:statusBarColor">@color/cyber_bg</item>
+        <item name="android:navigationBarColor">@color/cyber_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

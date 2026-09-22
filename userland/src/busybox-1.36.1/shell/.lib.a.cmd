@@ -1,0 +1,1 @@
+cmd_shell/lib.a := rm -f shell/lib.a; /home/z/android-sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar  rcs shell/lib.a shell/ash.o shell/ash_ptr_hack.o shell/random.o shell/shell_common.o

@@ -1,0 +1,1 @@
+cmd_applets/built-in.o :=  /home/z/android-sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android34-clang -nostdlib -nostdlib -static -pie -r -o applets/built-in.o applets/applets.o

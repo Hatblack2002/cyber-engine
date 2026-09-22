@@ -1,0 +1,1 @@
+cmd_sysklogd/lib.a := rm -f sysklogd/lib.a; /home/z/android-sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar  rcs sysklogd/lib.a 

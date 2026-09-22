@@ -1,0 +1,13 @@
+<resources>
+    <!-- Cyberpunk palette aligned with the mockup -->
+    <color name="cyber_bg">#FF020608</color>
+    <color name="cyber_panel">#FF050D14</color>
+    <color name="cyber_panel_dark">#FF030608</color>
+    <color name="cyber_viewport_bg">#FF040810</color>
+    <color name="cyber_terminal_bg">#FF010407</color>
+    <color name="cyber_cyan">#FF00F0FF</color>
+    <color name="cyber_lime">#FF00FF41</color>
+    <color name="cyber_amber">#FFFFAA00</color>
+    <color name="cyber_red">#FFFF0055</color>
+    <color name="cyber_text_dim">#FF4080A0</color>
+</resources>

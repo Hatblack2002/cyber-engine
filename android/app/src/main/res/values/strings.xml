@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cyber Engine</string>
+    <string name="app_title">CYBER ENGINE</string>
+    <string name="hud_format">backend=%s frames=%d</string>
+</resources>
