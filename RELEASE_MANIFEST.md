@@ -202,3 +202,18 @@ The application is NOT finished. It is a development snapshot suitable for hando
 3. Re-verify on a physical Android device.
 4. Fix KNOWN_BUGS #1 (multi-line paste) before any new feature work.
 5. Respect the anti-simulation rule (see `MASTER_SPEC.md` §2).
+
+---
+
+## Git commit
+
+| Field | Value |
+|---|---|
+| Repository | https://github.com/Hatblack2002/cyber-engine |
+| Branch | main |
+| Commit SHA (full) | 17e6e2c2c59fc3d81238b09bd49df05ce5bfd63a |
+| Commit SHA (short) | 17e6e2c |
+| Commit message | "Snapshot: Cyber Engine v0.1.0-debug — handoff to next agent" |
+| Commit date (UTC) | 2026-09-22T01:36:10Z |
+| Files in repo | 5749 |
+| Repo size (.git) | 43M |
